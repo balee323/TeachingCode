@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Console Applications",
-    "\\Console Applications\\SimpleLoop"
+    "\\Console Applications\\SimpleLoop",
+    "\\csharp-programming-for-absolute-begs",
+    "\\csharp-programming-for-absolute-begs\\Chapter 02",
+    "\\csharp-programming-for-absolute-begs\\Chapter 02\\1 My first program"
   ],
-  "SelectedNode": "\\Console Applications\\SimpleLoop\\SimpleLoop.sln",
+  "SelectedNode": "\\csharp-programming-for-absolute-begs\\Chapter 02\\1 My first program\\My first program.sln",
   "PreviewInSolutionExplorer": false
 }

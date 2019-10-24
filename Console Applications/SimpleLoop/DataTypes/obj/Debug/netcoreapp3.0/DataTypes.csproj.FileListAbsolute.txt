@@ -1,0 +1,11 @@
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.exe
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.deps.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.runtimeconfig.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.runtimeconfig.dev.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.dll
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\bin\Debug\netcoreapp3.0\DataTypes.pdb
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\obj\Debug\netcoreapp3.0\DataTypes.csprojAssemblyReference.cache
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\obj\Debug\netcoreapp3.0\DataTypes.AssemblyInfoInputs.cache
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\obj\Debug\netcoreapp3.0\DataTypes.AssemblyInfo.cs
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\obj\Debug\netcoreapp3.0\DataTypes.dll
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\DataTypes\obj\Debug\netcoreapp3.0\DataTypes.pdb

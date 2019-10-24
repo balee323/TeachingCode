@@ -9,3 +9,14 @@ C:\Users\Brian\source\repos\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\Simple
 C:\Users\Brian\source\repos\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.AssemblyInfo.cs
 C:\Users\Brian\source\repos\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.dll
 C:\Users\Brian\source\repos\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.pdb
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.exe
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.deps.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.runtimeconfig.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.runtimeconfig.dev.json
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.dll
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\bin\Debug\netcoreapp3.0\SimpleLoop.pdb
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.csprojAssemblyReference.cache
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.AssemblyInfoInputs.cache
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.AssemblyInfo.cs
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.dll
+D:\CodeRepos\TeachingCode\Console Applications\SimpleLoop\SimpleLoop\obj\Debug\netcoreapp3.0\SimpleLoop.pdb

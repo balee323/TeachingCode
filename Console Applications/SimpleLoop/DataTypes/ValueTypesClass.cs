@@ -25,19 +25,14 @@ namespace DataTypes
             blue = 3
 
         };
-
         
-        private int firstInt; //automatically set to 0
+        public int firstInt; //automatically set to 0
         private int secondInt = 5;
-
 
         //
         private float firstFloat; //automatically set to
         private float secondFloat = 1.0005f;
         private float thirdFloat = 1.0005F; //same as lowercase f
-
-
-
 
 
         //128 bit value (28 digits), so only use when you must
@@ -47,14 +42,26 @@ namespace DataTypes
         
 
         //methods
-        
         public void WriteOutNameSpaceColor(NameSpaceColors color){
 
             Console.WriteLine("the color is: " + color.ToString());
 
         }
 
-        public void WriteClassOutColor(ClassColors color)
+        //methods
+        public void WriteOutNameSpaceColor()
+        {
+
+            Console.WriteLine("You didn't pick a color");
+
+            WriteClassOutColor(ClassColors.green);
+
+        }
+
+
+
+
+        private void WriteClassOutColor(ClassColors color)
         {
 
             Console.WriteLine("the color is: " + color.ToString());
@@ -62,7 +69,6 @@ namespace DataTypes
         }
 
         //overloaded function
-
         public void WriteClassOutColor(object color)
         {
             if (color is ClassColors)

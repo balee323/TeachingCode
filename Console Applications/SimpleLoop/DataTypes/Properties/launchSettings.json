@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DataTypes": {
+      "commandName": "Project",
+      "commandLineArgs": "optionalParam"
+    }
+  }
+}

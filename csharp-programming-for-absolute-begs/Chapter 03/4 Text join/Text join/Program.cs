@@ -8,6 +8,10 @@ namespace Text_join
 {
     class Program
     {
+
+        int number = 500000000;
+        int number2 = 500_000_000;
+        
         static void Main(string[] args)
         {
             // Normal text
@@ -17,7 +21,7 @@ namespace Text_join
             Console.WriteLine(" in C#.");
 
             // Joining two texts using plus sign
-            Console.WriteLine("I have started to program" + " in C#.");
+            Console.WriteLine($"I have started to program {Math.PI.ToString()}");
 
             // Waiting for Enter
             Console.ReadLine();

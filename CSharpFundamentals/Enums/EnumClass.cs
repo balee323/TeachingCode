@@ -11,7 +11,6 @@ namespace Enums
         yellow = 1,
         orange = 2,
         purple = 3
-
     };
 
     public class EnumClass

@@ -8,24 +8,6 @@ namespace SimpleLoop
         {
 
 
-            //********  FOR Loop  VS  While Loop ****************
-            for (int i = 1; i < 20; i++)
-            {
-
-            }
-
-            int j = 1;
-            while (j < 20)
-            {
-                Console.WriteLine("hello");
-                j += 1;
-
-            }
-
-            //*****************************************************
-
-
-
             //********** DO WHILE Loop *****************
             //this loop will run at least once.
             bool isContinuedRunDoLoop = true;
@@ -48,6 +30,10 @@ namespace SimpleLoop
 
             bool isContinuedRunWhileLoop = true;
             //*****************************************************
+
+
+
+
 
 
             //********* WHILE LOOP ********************
@@ -73,7 +59,7 @@ namespace SimpleLoop
             //**** Do While Loop  VS  While Loop *******************
 
             var keepRunning = true;
-             
+
             do
             {
                 Console.WriteLine("ran throough do while loop.");
@@ -87,6 +73,38 @@ namespace SimpleLoop
 
             }
             //*****************************************************
+
+
+
+
+            //*********** FOR Loop ******************************
+
+            //for ([variable type] [variable name]; [condition]; [increment/decrement]{
+                //some logic and stuff
+            //}
+
+            //*****************************************************
+
+
+
+
+            //********  FOR Loop  VS  While Loop ****************
+            for (int i = 1; i < 20; i++)
+            {
+
+            }
+
+
+            int j = 1;
+            while (j < 20)
+            {
+                Console.WriteLine("hello");
+                j += 1;
+
+            }
+
+            //*****************************************************
+
 
 
 

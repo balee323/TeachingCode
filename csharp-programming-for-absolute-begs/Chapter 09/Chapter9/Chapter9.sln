@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decimal input", "..\1 Decimal input\Decimal input\Decimal input.csproj", "{E14268BD-96D9-424F-B864-EF9241C508F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localized numeric input", "..\2 Localized numeric input\Localized numeric input\Localized numeric input.csproj", "{4FDDB2EC-4971-4057-B70D-F65AF98FDD8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic arithmetic", "..\3 Basic arithmetic\Basic arithmetic\Basic arithmetic.csproj", "{E540A86E-9042-472E-B3A6-F5F6B47A9C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mathematical functions", "..\4 Mathematical functions\Mathematical functions\Mathematical functions.csproj", "{6609847B-4386-46A1-96E8-EEE36DC39C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integer division", "..\5 Integer division\Integer division\Integer division.csproj", "{B52B7980-1504-4EF7-926C-F8262B21B760}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E14268BD-96D9-424F-B864-EF9241C508F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14268BD-96D9-424F-B864-EF9241C508F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14268BD-96D9-424F-B864-EF9241C508F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14268BD-96D9-424F-B864-EF9241C508F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDDB2EC-4971-4057-B70D-F65AF98FDD8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDDB2EC-4971-4057-B70D-F65AF98FDD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDDB2EC-4971-4057-B70D-F65AF98FDD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDDB2EC-4971-4057-B70D-F65AF98FDD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E540A86E-9042-472E-B3A6-F5F6B47A9C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E540A86E-9042-472E-B3A6-F5F6B47A9C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E540A86E-9042-472E-B3A6-F5F6B47A9C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E540A86E-9042-472E-B3A6-F5F6B47A9C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6609847B-4386-46A1-96E8-EEE36DC39C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6609847B-4386-46A1-96E8-EEE36DC39C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6609847B-4386-46A1-96E8-EEE36DC39C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6609847B-4386-46A1-96E8-EEE36DC39C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52B7980-1504-4EF7-926C-F8262B21B760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52B7980-1504-4EF7-926C-F8262B21B760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52B7980-1504-4EF7-926C-F8262B21B760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52B7980-1504-4EF7-926C-F8262B21B760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEFAF1CD-0166-4836-A978-0F94EB8E57A5}
+	EndGlobalSection
+EndGlobal

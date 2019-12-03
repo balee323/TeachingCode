@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text input", "..\1 Text input\Text input\Text input.csproj", "{D5256B70-9E83-491E-AD06-A68A96078059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numeric input", "..\3 Numeric input\Numeric input\Numeric input.csproj", "{EC275276-D12C-4983-B080-1B322B387691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculation with entered number", "..\4 Calculation with entered number\Calculation with entered number\Calculation with entered number.csproj", "{910C521A-6F6F-460C-AE1E-7020DC1258E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ten more", "..\5 Ten more\Ten more\Ten more.csproj", "{6A4A2D19-313B-4ECF-BC05-789A449E6FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addition", "..\6 Addition\Addition\Addition.csproj", "{F072DDDC-D1D4-4789-8804-B9152521C172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Treating incorrect input", "..\7 Treating incorrect input\Treating incorrect input\Treating incorrect input.csproj", "{B061281B-5014-4F9D-B776-425C2DDD0615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5256B70-9E83-491E-AD06-A68A96078059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5256B70-9E83-491E-AD06-A68A96078059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5256B70-9E83-491E-AD06-A68A96078059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5256B70-9E83-491E-AD06-A68A96078059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC275276-D12C-4983-B080-1B322B387691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC275276-D12C-4983-B080-1B322B387691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC275276-D12C-4983-B080-1B322B387691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC275276-D12C-4983-B080-1B322B387691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910C521A-6F6F-460C-AE1E-7020DC1258E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910C521A-6F6F-460C-AE1E-7020DC1258E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910C521A-6F6F-460C-AE1E-7020DC1258E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910C521A-6F6F-460C-AE1E-7020DC1258E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4A2D19-313B-4ECF-BC05-789A449E6FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4A2D19-313B-4ECF-BC05-789A449E6FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4A2D19-313B-4ECF-BC05-789A449E6FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4A2D19-313B-4ECF-BC05-789A449E6FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F072DDDC-D1D4-4789-8804-B9152521C172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F072DDDC-D1D4-4789-8804-B9152521C172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F072DDDC-D1D4-4789-8804-B9152521C172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F072DDDC-D1D4-4789-8804-B9152521C172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B061281B-5014-4F9D-B776-425C2DDD0615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B061281B-5014-4F9D-B776-425C2DDD0615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B061281B-5014-4F9D-B776-425C2DDD0615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B061281B-5014-4F9D-B776-425C2DDD0615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A91BB0D-1F78-4E6C-AB8E-7483333D1C72}
+	EndGlobalSection
+EndGlobal

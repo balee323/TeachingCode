@@ -22,8 +22,9 @@ namespace Overflow_treatment
                 long result = million * million;
                 Console.WriteLine("Million times million:" + result);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                var errorMsg = e.Message;
                 Console.WriteLine("I cannot calculate this.");
             }
 
@@ -37,6 +38,10 @@ namespace Overflow_treatment
             Console.WriteLine("3. calculation");
             long correctResultAlternatively = (long)million * (long)million;
             Console.WriteLine("Million times million: " + correctResultAlternatively.ToString("N0"));
+
+
+
+
 
             // Waiting for Enter
             Console.ReadLine();

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currency conversion", "..\1 Currency conversion\Currency conversion\Currency conversion.csproj", "{7B20C901-6849-4ABB-80DA-E1CA684DD1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total price", "..\2 Total price\Total price\Total price.csproj", "{87586FFC-F2C7-4A5F-9465-21D1408E3559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commissions", "..\3 Commissions\Commissions\Commissions.csproj", "{E3031F62-7BD3-46A9-BA19-70CB557573C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rounding", "..\4 Rounding\Rounding\Rounding.csproj", "{A19688FF-862D-4530-B4AE-795B0E7D93B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Further rounding", "..\5 Further rounding\Further rounding\Further rounding.csproj", "{8DA862A6-6A3B-424E-8557-403BF95FA3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vat", "..\6 Vat\Vat\Vat.csproj", "{1C075496-39A0-4DBF-A2AC-0D07DBE8774F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B20C901-6849-4ABB-80DA-E1CA684DD1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B20C901-6849-4ABB-80DA-E1CA684DD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B20C901-6849-4ABB-80DA-E1CA684DD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B20C901-6849-4ABB-80DA-E1CA684DD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87586FFC-F2C7-4A5F-9465-21D1408E3559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87586FFC-F2C7-4A5F-9465-21D1408E3559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87586FFC-F2C7-4A5F-9465-21D1408E3559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87586FFC-F2C7-4A5F-9465-21D1408E3559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3031F62-7BD3-46A9-BA19-70CB557573C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3031F62-7BD3-46A9-BA19-70CB557573C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3031F62-7BD3-46A9-BA19-70CB557573C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3031F62-7BD3-46A9-BA19-70CB557573C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19688FF-862D-4530-B4AE-795B0E7D93B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19688FF-862D-4530-B4AE-795B0E7D93B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19688FF-862D-4530-B4AE-795B0E7D93B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19688FF-862D-4530-B4AE-795B0E7D93B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA862A6-6A3B-424E-8557-403BF95FA3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA862A6-6A3B-424E-8557-403BF95FA3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA862A6-6A3B-424E-8557-403BF95FA3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA862A6-6A3B-424E-8557-403BF95FA3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C075496-39A0-4DBF-A2AC-0D07DBE8774F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C075496-39A0-4DBF-A2AC-0D07DBE8774F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C075496-39A0-4DBF-A2AC-0D07DBE8774F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C075496-39A0-4DBF-A2AC-0D07DBE8774F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94E7DD2E-777F-4E2F-9465-DA721A36CD0F}
+	EndGlobalSection
+EndGlobal

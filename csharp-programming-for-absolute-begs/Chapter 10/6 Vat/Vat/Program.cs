@@ -15,6 +15,7 @@ namespace Vat
             string inputPrice = Console.ReadLine();
             double customerPrice = Convert.ToDouble(inputPrice);
 
+            //VAT - Value Added Tax
             Console.Write("Enter VAT rate in %: ");
             string inputVatRate = Console.ReadLine();
             double vatRate = Convert.ToDouble(inputVatRate);

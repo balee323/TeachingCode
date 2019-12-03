@@ -11,7 +11,18 @@ namespace Overflow
         static void Main(string[] args)
         {
             // Multiplying million by million
-            int million = 1000000;
+
+            //short (alias) -> int16  -32768 to 32767
+            short thirtyTwoThousand = 32_000;
+
+            //int(alias) -> which is int32 actually, can store way more -2,147,483,648 to 2,147,483,647
+            //Int32 million = 1_000_000; //Show that these are both the same
+            int million = 1_000_000;
+
+            //long(alias) -> int64 -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+            long trillion = 1_000_000_000_000_000_000;
+
+
             int result = million * million;
             long resultInLong = million * million;
 

@@ -7,20 +7,23 @@ routine/funtion.
 
 So have a list of choices in the Console.WriteLine().  Functions 1-3.
 
-Function 1:
+*int choice = int.Parse(Console.ReadLine());
+
+Function1() 
 This function asks a user to enter a number and loop that number n times.
 
 
-Function 2:
+Function2():
 This function will run a loop a random number of times.
-*Use Random object.    
+*Use Random object.   
+ 
 EX.  Random rand = new Random(seed value or leave empty)
 int randomNumber = rand.Next(minNumber, MaxNumber);
 
 then use the randomNumber for the loop condition.
 
 
-Function 3:
+GetUserDecisionForLoopingHello()
 This funtion will ask the user to enter a number between 1 and 3.
 
 if 1 is selected, then show a loop that says "Hello" 1 time.

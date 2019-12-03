@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SimpleLoop
 {
@@ -77,21 +78,30 @@ namespace SimpleLoop
 
 
 
-            ////*********** FOR Loop ******************************
-
-            ////for ([variable type] [variable name]; [condition]; [increment/decrement]{
-            //    //some logic and stuff
-            ////}
-
-            ////*****************************************************
 
 
 
 
-            ////********  FOR Loop  VS  While Loop ****************
+
+
+
+
+
+            //*********** FOR Loop ******************************
+
+            //for ([variable type] [variable name]; [condition]; [increment/decrement]{
+            //some logic and stuff
+            //}
+
+            //*****************************************************
+
+
+
+
+            //********  FOR Loop  VS  While Loop ****************
             //for (int i = 1; i < 20; i++)
             //{
-
+            //    Console.WriteLine("hello");
             //}
 
 
@@ -99,10 +109,11 @@ namespace SimpleLoop
             //while (j < 20)
             //{
             //    Console.WriteLine("hello");
-            //    j += 1;
+            //    j += 1; 
 
             //}
 
+            //Console.ReadKey();
             ////*****************************************************
 
 
@@ -110,29 +121,33 @@ namespace SimpleLoop
 
             ////**** Foreach Loops *******************
             ////these loops are for iterating a collection
-
-            //int[] numArray = new int[5];
-            //numArray[0] = 25;
-            //numArray[1] = 8;
-            //numArray[2] = 60;
-            //numArray[3] = -85;
-            //numArray[4] = 78;
-
-            ////iterator is handled by the foreach function
-            //foreach(int item in numArray)
-            //{
-            //    Console.WriteLine(item.ToString());
-            //}
+     
+            int[] numArray = new int[5];
+            numArray[0] = 25;
+            numArray[1] = 8;
+            numArray[2] = 60;
+            numArray[3] = -85;
+            numArray[4] = 78;
 
 
+            //iterator is handled by the foreach function
+            foreach (int item in numArray)
+            {
+                Console.WriteLine(item.ToString());
+            }
 
-            ////let's compare the difference from a for loop 
 
-            //for(int i= 0; i < numArray.Length; i++)
-            //{
-            //    Console.WriteLine(numArray[i].ToString());
-            //}
+            Console.WriteLine("***************");
 
+            //let's compare the difference from a for loop 
+
+            for (int i = 0; i < numArray.Length; i++)
+            {
+                Console.WriteLine(numArray[i].ToString());
+            }
+
+
+            Console.ReadKey();
 
             ////*****************************************************
 

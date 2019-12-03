@@ -1,0 +1,144 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SpaghettiCode
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            StartGame();
+
+            Console.ReadKey();
+        }
+
+       
+
+  
+
+        private static void StartGame()
+        {
+            string mainCharacterName = "";
+            string mainCharacterSuperPower = "";
+            int mainCharacterPowerLevel = 0;
+
+
+            string villiansName = "";
+            string villainsSuperPower = "";
+            int villainsPowerLevel = 0;
+            int villiansFighsWon = 0;
+
+            Console.WriteLine("!!!!  SUPER HERO FIGHT GAME  !!!.");
+
+            mainCharacterName = TakeConsoleInput("Please enter your name");
+
+            mainCharacterSuperPower = TakeConsoleInput("Press enter your super power.");
+
+            villiansName = TakeConsoleInput("Press enter a villian's name.");
+
+            villainsSuperPower = TakeConsoleInput("Press enter villian's super power.");
+
+
+            //let's randomly find the main character's power level
+
+
+
+            Random rand1 = new Random(DateTime.Now.Millisecond);
+            mainCharacterPowerLevel = rand1.Next(1, 20);
+
+
+            //let's randomly find the villian's power level
+            Random rand2 = new Random(DateTime.Now.Millisecond);
+            villainsPowerLevel = rand1.Next(1, 20);
+
+
+            int mainCharacterFightsWon = 0;
+
+            //first fight
+            FightRound(mainCharacterPowerLevel, villainsPowerLevel, ref villiansFighsWon, ref mainCharacterFightsWon);
+
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
+
+            //let's randomly find the main character's power level
+            mainCharacterPowerLevel = rand1.Next(1, 20);
+
+
+            //let's randomly find the villian's power level
+            villainsPowerLevel = rand1.Next(1, 20);
+
+
+            //second fight
+            FightRound(mainCharacterPowerLevel, villainsPowerLevel, ref villiansFighsWon, ref mainCharacterFightsWon);
+
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
+
+
+            //let's randomly find the main character's power level
+            mainCharacterPowerLevel = rand1.Next(1, 20);
+
+
+            //let's randomly find the villian's power level
+            villainsPowerLevel = rand1.Next(1, 20);
+
+
+            //third fight
+            FightRound(mainCharacterPowerLevel, villainsPowerLevel, ref villiansFighsWon, ref mainCharacterFightsWon);
+
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
+
+
+            //final results
+            if (mainCharacterFightsWon > villiansFighsWon)
+            {
+                Console.WriteLine($"You won the fight! Your super power was {mainCharacterSuperPower}.");
+            }
+            else
+            {
+                Console.WriteLine($"You lost the fight! {villiansName} had defeated you with their {mainCharacterSuperPower}.");
+            }
+
+
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+
+        }
+
+
+        private static string TakeConsoleInput(string message)
+        {
+            Console.WriteLine(message);
+            string value = Console.ReadLine();
+
+            int choice = int.Parse(Console.ReadLine());
+
+
+            return value;
+        }
+
+
+        private static void FightRound(int mainCharacterPowerLevel, int villainsPowerLevel, ref int villiansFighsWon, ref int mainCharacterFightsWon)
+        {
+            if (mainCharacterPowerLevel > villainsPowerLevel)
+            {
+                mainCharacterFightsWon = mainCharacterFightsWon + 1;
+                Console.WriteLine("You've won this round");
+            }
+            else
+            {
+                villiansFighsWon = villiansFighsWon + 1;
+            }
+        }
+
+
+      
+    }
+}

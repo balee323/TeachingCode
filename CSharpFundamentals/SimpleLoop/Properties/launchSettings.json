@@ -1,8 +1,7 @@
 {
   "profiles": {
     "SimpleLoop": {
-      "commandName": "Project",
-      "commandLineArgs": "\"I am an optional application argument passed into the application at startup.\""
+      "commandName": "Project"
     }
   }
 }

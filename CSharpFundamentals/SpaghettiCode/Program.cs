@@ -55,11 +55,15 @@ namespace SpaghettiCode
             if(mainCharacterPowerLevel > villainsPowerLevel)
             {
                 mainCharacterFightsWon = mainCharacterFightsWon + 1;
+                Console.WriteLine("You've won this round");
             }
             else
             {
                 villiansFighsWon = villiansFighsWon + 1;
             }
+
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
 
             //let's randomly find the main character's power level
             mainCharacterPowerLevel = rand1.Next(1, 20);
@@ -79,6 +83,10 @@ namespace SpaghettiCode
                 villiansFighsWon = villiansFighsWon + 1;
             }
 
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
+
+
             //let's randomly find the main character's power level
             mainCharacterPowerLevel = rand1.Next(1, 20);
 
@@ -96,6 +104,9 @@ namespace SpaghettiCode
             {
                 villiansFighsWon = villiansFighsWon + 1;
             }
+
+            //score:
+            Console.WriteLine($"Your wins {mainCharacterFightsWon}, {villiansName} wins {villiansFighsWon}.");
 
 
             //final results

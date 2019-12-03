@@ -14,8 +14,6 @@ namespace SimpleLoop
 
             }
 
-
-
             int j = 1;
             while (j < 20)
             {
@@ -91,6 +89,34 @@ namespace SimpleLoop
             //*****************************************************
 
 
+
+            //**** Foreach Loops *******************
+            //these loops are for iterating a collection
+
+            int[] numArray = new int[5];
+            numArray[0] = 25;
+            numArray[1] = 8;
+            numArray[2] = 60;
+            numArray[3] = -85;
+            numArray[4] = 78;
+
+            //iterator is handled by the foreach function
+            foreach(int item in numArray)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+
+
+            //let's compare the difference from a for loop 
+
+            for(int i= 0; i < numArray.Length; i++)
+            {
+                Console.WriteLine(numArray[i].ToString());
+            }
+
+
+            //*****************************************************
 
             Environment.Exit(0);
         }

@@ -16,7 +16,9 @@ namespace MyFirstGUIProgram
         {
             InitializeComponent();
         }
+        
 
+        //this function is not currently tied to a gui control 
         private void button1_Click(object sender, EventArgs e)
         {
             Class1 class1 = new Class1();
@@ -24,26 +26,12 @@ namespace MyFirstGUIProgram
    
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //if (chk1.Checked == true)
-            //{
-            //    MessageBox.Show("You checked box 1");
-            //}
-            //else if (chk2.Checked == true)
-            //{
-            //    MessageBox.Show("You checked box 2");
-            //}
-            //else if (chk3.Checked == true)
-            //{
-            //    MessageBox.Show("You checked box 3");
-            //}
-        }
-
 
         private void btn1_Click(object sender, EventArgs e)
         {
-
+            //if statements are looking for a true statement
+            //if (rd1.Checked) --- becomes if(true)
+            //if(rd1.Checked==true) also equates to true   --- becomes if(true)
 
             if (rd1.Checked)
             {
@@ -70,10 +58,15 @@ namespace MyFirstGUIProgram
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            //txtResult.Text = "";
-
+            //txtResult.Text = "";  //Clear() does same thing
             txtResult.Clear();
             txtInput.Clear();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();       
         }
     }
 }

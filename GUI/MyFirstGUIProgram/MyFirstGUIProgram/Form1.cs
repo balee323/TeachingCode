@@ -22,8 +22,8 @@ namespace MyFirstGUIProgram
         private void button1_Click(object sender, EventArgs e)
         {
             Class1 class1 = new Class1();
-            class1.EveryOnesFavoriteFuntion("hi", 54);
-   
+            //class1.EveryOnesFavoriteFuntion("hi", 54);
+            
         }
 
 

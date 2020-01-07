@@ -14,21 +14,32 @@ namespace MyFirstGUIProgram
         // Example overloaded functions (polymorphism)
 
 
-        //no paramter function
+        /// <summary>
+        /// no paramter function
+        /// </summary>
         public void EveryOnesFavoriteFuntion()
         {
             MessageBox.Show($"showing: Hello! and {5}");
         }
 
 
-        //2 parameter function
+        /// <summary>
+        /// 2 parameter function
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="num"></param>
         public void EveryOnesFavoriteFuntion(string str, int num)
         {          
             MessageBox.Show($"showing: {str} and {num}");                 
         }
 
 
-        //3 parameter function with same name
+        /// <summary>
+        /// 3 parameter function with same name
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="num"></param>
+        /// <param name="ShowAdditonalMessage"></param>
         public void EveryOnesFavoriteFuntion(string str, int num, bool ShowAdditonalMessage)
         {
 
@@ -68,7 +79,7 @@ namespace MyFirstGUIProgram
 
             if(userType == UserType.CoolUser || userType == UserType.SuperCoolUser)
             {
-                EveryOnesFavoriteFuntion(str, num, showAdditonalMessage, true);
+                EveryOnesFavoriteFuntion(str, num, showAdditonalMessage, showOptionalMessage);
             }
             else if(userType == UserType.SuperCoolUderFromTheFuture)
             {

@@ -18,6 +18,7 @@ namespace OOP_Introduction
 
         public Advisor(Person person) { this.LastName = person.LastName; this.FirstName = person.FirstName; }
 
+
         private void AssignRandomAdvisor()
         {
             Tuple<string, string>[] persons = new Tuple<string, string>[3];

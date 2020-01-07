@@ -21,6 +21,7 @@ namespace OOP_Introduction
 
             public string Study()
             {
+            //var thing = _studentNumber;
             return "Completed assignments. Exam week is too close!";
             }
 

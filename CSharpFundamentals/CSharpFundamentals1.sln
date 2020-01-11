@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IO", "IO", "{29366091-DC2E-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFileEditor", "SimpleFileEditor\SimpleFileEditor.csproj", "{B9CF952E-73E8-433F-AB9E-4E401953BFC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexadecimalConverter", "HexadecimalConverter\HexadecimalConverter.csproj", "{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{B9CF952E-73E8-433F-AB9E-4E401953BFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9CF952E-73E8-433F-AB9E-4E401953BFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9CF952E-73E8-433F-AB9E-4E401953BFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{6023992B-05AF-4EAE-81AF-ED02CFCC1F9C} = {82FBBF2B-3A3D-4BB9-B52B-D2B2147DBDA0}
 		{201C1E58-EBC7-4B80-9387-D42B22DBE94D} = {82FBBF2B-3A3D-4BB9-B52B-D2B2147DBDA0}
 		{B9CF952E-73E8-433F-AB9E-4E401953BFC4} = {29366091-DC2E-48EE-8343-8A4CA8F3BFDC}
+		{A606549F-7DB8-474A-8BD1-EBCF5CA6C2AA} = {29366091-DC2E-48EE-8343-8A4CA8F3BFDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4C88E41-5A02-4888-85FE-CB77C2957C17}

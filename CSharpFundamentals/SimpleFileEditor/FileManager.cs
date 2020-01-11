@@ -73,18 +73,18 @@ namespace SimpleFileEditor
             Console.WriteLine(bitString);
 
 
-            //Console.WriteLine("here's the raw data that will be written: \r\n");
-            //var sb = new StringBuilder("new byte[] { ");
+            Console.WriteLine("here's the raw data that will be written: \r\n");
+            var sb = new StringBuilder("new byte[] { ");
 
-            //foreach (var b in buffer)
-            //{            
-            //        sb.Append(b + ", ");                              
-            //}
+            foreach (var b in buffer)
+            {
+                sb.Append(b + ", ");
+            }
 
-            //sb = sb.Remove(sb.Length - 2, 2); //cut out the trailing comma
+            sb = sb.Remove(sb.Length - 2, 2); //cut out the trailing comma
 
-            //sb.Append("}");
-            //Console.WriteLine(sb.ToString());
+            sb.Append("}");
+            Console.WriteLine(sb.ToString());
 
 
             fs.Write(buffer, 0, data.Length);

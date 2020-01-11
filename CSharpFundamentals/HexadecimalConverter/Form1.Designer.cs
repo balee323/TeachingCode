@@ -34,6 +34,7 @@
             this.TxtOutPut = new System.Windows.Forms.TextBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -94,11 +95,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Base 10 to Base 16 converter";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 375);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Click here to open online tool for comparison.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 408);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.TxtOutPut);
@@ -120,6 +132,7 @@
         private System.Windows.Forms.TextBox TxtOutPut;
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -40,20 +40,20 @@ namespace LearningGraphics
 
             lblScore.Text = "0";
 
-            _hero = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\Aircraft1.png"), new Rectangle(this.Width / 2, this.Height - (70 * 2), 50, 50), 5, this, true);
+            _hero = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\Aircraft1.png"), new Rectangle(this.Width / 2, this.Height - (70 * 2), 40, 38), 5, this, true);
 
             _enemyShips = new SpriteObj[10];
 
             _enemyShips[0] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\Boss1.png"), new Rectangle(10, 10, 70, 70), 3, this);
 
-            _enemyShips[1] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(100, 10, 45, 50), 5, this);
-            _enemyShips[2] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(160, 10, 45, 50), 7, this);
-            _enemyShips[3] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E3.png"), new Rectangle(210, 10, 45, 50), 6, this);
-            _enemyShips[4] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(270, 10, 45, 50), 5, this);
-            _enemyShips[5] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(330, 10, 45, 50), 7, this);
-            _enemyShips[6] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E3.png"), new Rectangle(390, 10, 45, 50), 6, this);
-            _enemyShips[7] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(450, 10, 45, 50), 5, this);
-            _enemyShips[8] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(510, 10, 45, 50), 7, this);
+            _enemyShips[1] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(100, 10, 45, 40), 5, this);
+            _enemyShips[2] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(160, 10, 45, 40), 7, this);
+            _enemyShips[3] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E3.png"), new Rectangle(210, 10, 45, 40), 6, this);
+            _enemyShips[4] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(270, 10, 45, 40), 5, this);
+            _enemyShips[5] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(330, 10, 45, 40), 7, this);
+            _enemyShips[6] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E3.png"), new Rectangle(390, 10, 45, 40), 6, this);
+            _enemyShips[7] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E1.png"), new Rectangle(450, 10, 45, 40), 5, this);
+            _enemyShips[8] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\E2.png"), new Rectangle(510, 10, 45, 40), 7, this);
 
             _enemyShips[9] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\Boss2.png"), new Rectangle(590, 10, 70, 70), 2, this);
             SetupTimers();
@@ -124,8 +124,7 @@ namespace LearningGraphics
         private void RefreshSprites()
         {
             while(true){
-
-              
+                
                 if (_enemyShips != null)
                 {
                     try
@@ -142,18 +141,16 @@ namespace LearningGraphics
                 }
                         
                 _hero.DrawSprites();
-
+                _hero.Score = _collisonMgr.Score;
                 lblScore.Invoke(new Action(() => lblScore.Text = _collisonMgr.Score.ToString()));
-
-                
-                
+                         
                 if (_hero.IsDetroyed)
                 {
                     button1.Invoke(new Action(() =>  button1.Visible = true));
                     button1.Invoke(new Action(() => button1.Enabled = true));
                 }
 
-                Task.Delay(50).Wait();
+                Task.Delay(60).Wait();
             }
               
 

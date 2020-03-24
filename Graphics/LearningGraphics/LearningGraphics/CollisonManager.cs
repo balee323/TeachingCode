@@ -25,11 +25,8 @@ namespace LearningGraphics
         }
 
         public void StartCollisonDetection()
-        {
-            
-
-            Task.Run(DetectCollisonWithShips);
-           
+        {        
+            Task.Run(DetectCollisonWithShips);        
         }
 
 
@@ -37,17 +34,8 @@ namespace LearningGraphics
         {
             while (true)
             {
-                //foreach (SpriteObj enemy in _enemies)
-                //{                   
-                //    Task.Run(() => EnemyHit(enemy));
-                //    Task.Run(() => CollisionWithEnemy(enemy));
-                //}
-
                 Parallel.ForEach(_enemies, EnemyHit);
                 Parallel.ForEach(_enemies, CollisionWithEnemy);
-             
-
-                //Task.Delay(10).Wait();
             }
 
          

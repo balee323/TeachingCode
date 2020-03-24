@@ -11,7 +11,7 @@ namespace LearningGraphics
 
     class SpriteObj
     {
-        private Rectangle _bullet = new Rectangle(0, 0, 8, 40);
+        private Rectangle _bullet = new Rectangle(0, 0, 5, 40);
         private Graphics _graphics;
         private Rectangle _shipCoodinates = new Rectangle();
         private Form _form;
@@ -22,6 +22,8 @@ namespace LearningGraphics
         private int _originalSpeed;
         private Rectangle _originalShipCoordinates;
         private bool _isDetroyed = false;
+        private int _score = 0;
+        private Brush _bulletColor = Brushes.White;
 
         private Timer _leftTimer = new Timer();
         private Timer _rightTimer = new Timer();
@@ -47,7 +49,6 @@ namespace LearningGraphics
             _leftTimer.Interval = 10;
             _leftTimer.Enabled = false;
             _leftTimer.Tick += new System.EventHandler(this.MoveLeftTimer_Tick);
-
         }
 
 
@@ -64,14 +65,12 @@ namespace LearningGraphics
                 
                 if( TimesDetroyed % 5 == 0 && TimesDetroyed != 0)
                 {
-                    ShipSpeed += 1;
+                    ShipSpeed += 2;
                 }
             }
         }
             
             
-
-
         public string Name { get; set; }
 
 
@@ -92,6 +91,7 @@ namespace LearningGraphics
 
         public int ShipSpeed { get; set; }
 
+
         public Rectangle Bullet
         {
             get { return _bullet; }
@@ -100,6 +100,8 @@ namespace LearningGraphics
 
         public int TimesDetroyed { get => _timesDetroyed; set => _timesDetroyed = value; }
 
+
+        public int Score { get => _score; set => _score = value; }
 
         public void Reset()
         {
@@ -115,6 +117,43 @@ namespace LearningGraphics
         public void Fire()
         {
             if (!_isAmmoInFlight && !IsDetroyed) {
+
+                if(_score == 0)
+                {
+                    _bullet.Width = 5;
+                    _bulletColor = Brushes.White;
+                }
+                else if (_score == 5000 ){
+                    _bullet.Width = _bullet.Width + 2;
+                    _bulletColor = Brushes.Yellow;
+                }
+                else if (_score == 10000)
+                {
+                    _bullet.Width = _bullet.Width + 5;
+                    _bulletColor = Brushes.Orange;
+                }
+                else if (_score == 15000)
+                {
+                    _bullet.Width = _bullet.Width + 3;
+                    _bulletColor = Brushes.Red;
+                }
+                else if (_score == 20000)
+                {
+                    _bullet.Width = _bullet.Width + 3;
+                    _bulletColor = Brushes.Purple;
+                }
+                else if (_score == 30000)
+                {
+                    _bullet.Width = _bullet.Width + 4;
+                    _bulletColor = Brushes.AliceBlue;
+                }
+                else if (_score == 50000)
+                {
+                    _bullet.Width = _bullet.Width + 3;
+                    _bulletColor = Brushes.Gold;
+                }
+
+
 
                 _bullet.X = ShipCoodinates.X + (ShipCoodinates.Width / 2);
                 _bullet.Y = ShipCoodinates.Y;
@@ -136,11 +175,12 @@ namespace LearningGraphics
                 UpdateAmmoLocation();
 
                 _graphics.DrawImage(ShipSprite, ShipCoodinates);
+
                 if (_isAmmoInFlight)
                 {
                     //_graphics.DrawImage(AmmoSprite, Bullet);
-                    _graphics.DrawRectangle(new Pen(Color.Yellow), Bullet);
-                    _graphics.FillRectangle(Brushes.Yellow, Bullet);
+                    _graphics.DrawRectangle(new Pen(Color.White), Bullet);
+                    _graphics.FillRectangle(_bulletColor, Bullet);
                 }              
             }
         }

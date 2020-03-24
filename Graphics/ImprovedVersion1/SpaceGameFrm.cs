@@ -44,6 +44,8 @@ namespace ImprovedVersion1
         bool pause;
         bool gameIsOver;
 
+        PictureBox Aircraft = new PictureBox();
+
         //Constructor
         public SpaceGameFrm()
         {
@@ -82,6 +84,18 @@ namespace ImprovedVersion1
             GameSong.settings.volume = 5;
             Shoot.settings.volume = 1;
             Explosion.settings.volume = 6;
+
+            var image = Image.FromFile("asserts\\Aircraft1.png");
+            Aircraft.Image = image;
+            Aircraft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            Aircraft.BackColor = Color.Transparent;
+            Aircraft.Top = this.Height - Aircraft.Height * 2 - 10;
+            Aircraft.Left = (this.Width - Aircraft.Width) / 2;
+            Aircraft.Width = 75;
+            Aircraft.Height = 75;
+            this.Controls.Add(Aircraft);
+
+           
 
             //Load all Images
             Image enemi1 = Image.FromFile("asserts\\E1.png");
@@ -198,6 +212,30 @@ namespace ImprovedVersion1
             _enemyMoveTimer.Interval = 10;
             _enemyMoveTimer.Tick += new System.EventHandler(this.MoveEnemisTimer_Tick);
 
+
+            _ammoTimer.Enabled = true;
+            _ammoTimer.Interval = 10;
+            _ammoTimer.Tick += new System.EventHandler(this.AmmoTimer_Tick);
+
+
+            _downTimer.Interval = 5;
+            _downTimer.Enabled = false;
+            _downTimer.Tick += new System.EventHandler(this.MoveDownTimer_Tick);
+
+
+            _leftTimer.Interval = 5;
+            _leftTimer.Enabled = false;
+            _leftTimer.Tick += new System.EventHandler(this.MoveLeftTimer_Tick);
+
+   
+            _rightTimer.Interval = 5;
+            _rightTimer.Enabled = false;
+            _rightTimer.Tick += new System.EventHandler(this.MoveRightTimer_Tick);
+
+  
+            _upTimer.Interval = 5;
+            _upTimer.Enabled = false;
+            _upTimer.Tick += new System.EventHandler(this.MoveTopTimer_Tick);
         }
 
 
@@ -234,7 +272,7 @@ namespace ImprovedVersion1
         }
 
         //KeyDown Event Handler
-        private void SpaceForm_KeyDown(object sender, KeyEventArgs e)
+        private void SpaceGameFrm_KeyDown(object sender, KeyEventArgs e)
         {
             if (!pause)
             {
@@ -258,12 +296,14 @@ namespace ImprovedVersion1
         }
 
         //KeyUp Event Handler
-        private void SpaceForm_KeyUp(object sender, KeyEventArgs e)
+        private void SpaceGameFrm_KeyUp(object sender, KeyEventArgs e)
         {
+           
             _rightTimer.Stop();
             _leftTimer.Stop();
             _downTimer.Stop();
             _upTimer.Stop();
+
 
             if (e.KeyCode == Keys.Space)
             {
@@ -292,7 +332,7 @@ namespace ImprovedVersion1
         //Move Left Timer_Tick
         private void MoveLeftTimer_Tick(object sender, EventArgs e)
         {
-            if (Aircraft.Left > 10)
+            if (Aircraft.Left > 0)
             {
                 Aircraft.Left -= AircraftSpeed;
             }
@@ -301,10 +341,11 @@ namespace ImprovedVersion1
         //Move Rigth Timer_Tick
         private void MoveRightTimer_Tick(object sender, EventArgs e)
         {
-            if (Aircraft.Right < 580)
+            if (Aircraft.Right < this.Right - Aircraft.Width)
             {
                 Aircraft.Left += AircraftSpeed;
             }
+            
         }
 
         //Move Upwards Timer_Tick
@@ -313,14 +354,13 @@ namespace ImprovedVersion1
             if (Aircraft.Top > 10)
             {
                 Aircraft.Top -= AircraftSpeed;
-
             }
         }
 
         //Move Downwards Timer_Tick
         private void MoveDownTimer_Tick(object sender, EventArgs e)
         {
-            if (Aircraft.Top < 400)
+            if (Aircraft.Bottom < this.Height - Aircraft.Height/2)
             {
                 Aircraft.Top += AircraftSpeed;
             }
@@ -491,9 +531,6 @@ namespace ImprovedVersion1
             _enemyAmmoTimer.Start();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

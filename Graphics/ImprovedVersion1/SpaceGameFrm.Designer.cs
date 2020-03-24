@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpaceGameFrm));
             this.Text_lbl = new System.Windows.Forms.Label();
             this.ReplayBtn = new System.Windows.Forms.Button();
             this.QuitBtn = new System.Windows.Forms.Button();
@@ -36,8 +35,6 @@
             this.scorelbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.levelbl = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Text_lbl
@@ -129,24 +126,13 @@
             this.levelbl.TabIndex = 42;
             this.levelbl.Text = "01";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 234);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 632);
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // SpaceGameFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(786, 714);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.levelbl);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.scorelbl);
@@ -154,10 +140,12 @@
             this.Controls.Add(this.QuitBtn);
             this.Controls.Add(this.ReplayBtn);
             this.Controls.Add(this.Text_lbl);
+            this.KeyPreview = true;
             this.Name = "SpaceGameFrm";
             this.Text = "Space Game";
             this.Load += new System.EventHandler(this.SpaceGameFrm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SpaceGameFrm_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SpaceGameFrm_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,7 +159,6 @@
         private System.Windows.Forms.Label scorelbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label levelbl;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

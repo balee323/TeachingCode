@@ -11,7 +11,7 @@ namespace LearningGraphics
 
     class SpriteObj
     {
-        private Rectangle _bullet = new Rectangle(0, 0, 5, 100);
+        private Rectangle _bullet = new Rectangle(0, 0, 5, 120);
         private Graphics _graphics;
         private Rectangle _shipCoodinates = new Rectangle();
         private Form _form;
@@ -102,6 +102,7 @@ namespace LearningGraphics
 
 
         public int Score { get => _score; set => _score = value; }
+        public bool IsAmmoInFlight { get => _isAmmoInFlight; set => _isAmmoInFlight = value; }
 
         public void Reset()
         {
@@ -118,7 +119,7 @@ namespace LearningGraphics
         {
             if (!_isAmmoInFlight && !IsDetroyed) {
 
-                if(_score == 0)
+                if(_score <= 0)
                 {
                     _bullet.Width = 5;
                     _bulletColor = Brushes.White;
@@ -145,15 +146,32 @@ namespace LearningGraphics
                 else if (_score == 30000)
                 {
                     _bullet.Width = _bullet.Width + 4;
-                    _bulletColor = Brushes.AliceBlue;
+                    _bulletColor = Brushes.Cyan;
                 }
-                else if (_score == 50000)
+                else if (_score == 45000)
                 {
-                    _bullet.Width = _bullet.Width + 3;
+                    _bullet.Width = _bullet.Width + 4;
+                    _bulletColor = Brushes.Silver;
+                }
+                else if (_score == 60000)
+                {
+                    _bullet.Width = _bullet.Width + 5;
+                    _bulletColor = Brushes.SteelBlue;
+                }
+                else if (_score == 75000)
+                {
+                    _bullet.Width = _bullet.Width + 8;
                     _bulletColor = Brushes.Gold;
                 }
+                else if (_score == 100000)
+                {
+                    _bullet.Width = _bullet.Width + 8;
+                    _bulletColor = Brushes.Goldenrod;
+                }
 
-                _bullet.X = ShipCoodinates.X + (ShipCoodinates.Width / 2) - 3;
+
+                //To center the bullet at front of spaceship
+                _bullet.X = ShipCoodinates.X + (ShipCoodinates.Width / 2) - (_bullet.Width/2); 
                 _bullet.Y = ShipCoodinates.Y;
                 _isAmmoInFlight = true;
             }
@@ -208,9 +226,9 @@ namespace LearningGraphics
         private void UpdateAmmoLocation()
         {
 
-            if ((Bullet.Top > -50) && _isAmmoInFlight)
+            if ((Bullet.Top > -5) && _isAmmoInFlight)
             {
-                var yLocation = Bullet.Y - 90;
+                var yLocation = Bullet.Y - 100;
                 _bullet.Y = yLocation;
             }
             else

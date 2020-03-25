@@ -54,7 +54,7 @@ namespace LearningGraphics
 
         private void EnemyHit(SpriteObj enemy)
         {
-            if (enemy.ShipCoodinates.IntersectsWith(_hero.Bullet) && !enemy.IsDetroyed)
+            if (enemy.ShipCoodinates.IntersectsWith(_hero.Bullet) && !enemy.IsDetroyed &&_hero.IsAmmoInFlight)
             {
                 enemy.ShipSprite = Image.FromFile("asserts\\Explosion.png");
                 enemy.IsDetroyed = true;

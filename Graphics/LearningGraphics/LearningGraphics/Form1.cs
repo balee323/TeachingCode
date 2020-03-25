@@ -150,7 +150,7 @@ namespace LearningGraphics
                     button1.Invoke(new Action(() => button1.Enabled = true));
                 }
 
-                Task.Delay(60).Wait();
+                Task.Delay(70).Wait();
             }
               
 

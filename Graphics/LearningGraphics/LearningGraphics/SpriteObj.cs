@@ -11,7 +11,7 @@ namespace LearningGraphics
 
     class SpriteObj
     {
-        private Rectangle _bullet = new Rectangle(0, 0, 5, 120);
+        private Rectangle _bullet = new Rectangle(0, 0, 5, 55);
         private Graphics _graphics;
         private Rectangle _shipCoodinates = new Rectangle();
         private Form _form;
@@ -119,7 +119,9 @@ namespace LearningGraphics
         {
             if (!_isAmmoInFlight && !IsDetroyed) {
 
-                if(_score <= 0)
+                _isAmmoInFlight = true;
+
+                if (_score <= 0)
                 {
                     _bullet.Width = 5;
                     _bulletColor = Brushes.White;
@@ -188,7 +190,7 @@ namespace LearningGraphics
                 //_graphics.FillRectangle(Brushes.Black, Bullet.X, Bullet.Y, Bullet.Width+2, Bullet.Height+2);
 
                 UpdateShipLocation();
-                UpdateAmmoLocation();
+               // UpdateAmmoLocation();
 
                 _graphics.DrawImage(ShipSprite, ShipCoodinates);
 
@@ -223,18 +225,29 @@ namespace LearningGraphics
         }
 
 
+        public void UpdateAmmoLocationThread()
+        {
+            Task.Run(UpdateAmmoLocation);
+        }
+
+
         private void UpdateAmmoLocation()
         {
+            while (true)
+            {
 
-            if ((Bullet.Top > -5) && _isAmmoInFlight)
-            {
-                var yLocation = Bullet.Y - 100;
-                _bullet.Y = yLocation;
+                if ((Bullet.Top > -30) && _isAmmoInFlight)
+                {
+                    var yLocation = Bullet.Y - 30;
+                    _bullet.Y = yLocation;
+                }
+                else
+                {
+                    _isAmmoInFlight = false;
+                }
+                Task.Delay(10).Wait();
             }
-            else
-            {
-                _isAmmoInFlight = false;
-            }           
+
         }
 
 
@@ -267,6 +280,8 @@ namespace LearningGraphics
         }
 
 
+
+
         public void MoveLeft()
         {
                 _rightTimer.Enabled = false;
@@ -288,6 +303,8 @@ namespace LearningGraphics
             _leftTimer.Stop();
 
         }
+
+
 
     }
 }

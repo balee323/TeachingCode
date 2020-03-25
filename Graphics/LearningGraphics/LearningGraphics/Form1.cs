@@ -22,7 +22,7 @@ namespace LearningGraphics
 
         public Form1()
         {
-            this.DoubleBuffered = true; // to reduce/prevent flickering
+            //this.DoubleBuffered = true; // to reduce/prevent flickering
             this.BackColor = Color.Black;
             InitializeComponent();
         }
@@ -31,12 +31,17 @@ namespace LearningGraphics
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            //Trying another way to reduce flickering/tearing
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
+
             BeginGame();
         }
 
         private void BeginGame()
         {
-            //PlayGameSong();
+            PlayGameSong();
 
             lblScore.Text = "0";
 
@@ -58,6 +63,7 @@ namespace LearningGraphics
             _enemyShips[9] = new SpriteObj(this.CreateGraphics(), Image.FromFile("asserts\\Boss2.png"), new Rectangle(590, 10, 70, 70), 2, this);
             SetupTimers();
 
+            _hero.UpdateAmmoLocationThread();
             _collisonMgr = new CollisonManager(_enemyShips.ToList(), _hero, this);
             _collisonMgr.StartCollisonDetection();
         }

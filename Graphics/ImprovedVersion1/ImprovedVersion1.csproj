@@ -117,6 +117,7 @@
     <Content Include="asserts\star2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="songs\Bomb.wav" />
     <Content Include="songs\boom.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

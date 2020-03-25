@@ -11,7 +11,7 @@ namespace LearningGraphics
 
     class SpriteObj
     {
-        private Rectangle _bullet = new Rectangle(0, 0, 5, 40);
+        private Rectangle _bullet = new Rectangle(0, 0, 5, 100);
         private Graphics _graphics;
         private Rectangle _shipCoodinates = new Rectangle();
         private Form _form;
@@ -153,9 +153,7 @@ namespace LearningGraphics
                     _bulletColor = Brushes.Gold;
                 }
 
-
-
-                _bullet.X = ShipCoodinates.X + (ShipCoodinates.Width / 2);
+                _bullet.X = ShipCoodinates.X + (ShipCoodinates.Width / 2) - 3;
                 _bullet.Y = ShipCoodinates.Y;
                 _isAmmoInFlight = true;
             }

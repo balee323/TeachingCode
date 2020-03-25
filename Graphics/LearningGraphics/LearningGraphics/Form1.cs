@@ -66,6 +66,7 @@ namespace LearningGraphics
             _hero.UpdateAmmoLocationThread();
             _collisonMgr = new CollisonManager(_enemyShips.ToList(), _hero, this);
             _collisonMgr.StartCollisonDetection();
+
         }
 
 
@@ -73,9 +74,7 @@ namespace LearningGraphics
         {
             var g = this.CreateGraphics();
             g.Clear(Color.Black);
-
-            
-           
+                    
             lblScore.Text = "0";
 
             _collisonMgr.Score = 0;
@@ -84,10 +83,9 @@ namespace LearningGraphics
             foreach(SpriteObj enemy in _enemyShips){
                 enemy.Reset();
             }
-            
 
-            Task.Delay(100);
-
+            //to allow for full reset
+            Task.Delay(200).Wait();
             
         }
 
@@ -101,31 +99,27 @@ namespace LearningGraphics
 
             //Setup Songs settings
             song.settings.setMode("loop", true);
-            song.settings.volume = 5;
+            song.settings.volume = 70;
             song.controls.play();
         }
 
 
         private void SetupTimers()
         {
-
-
             Task stars = new Task(GenerateStars);
             //stars.Start();
 
             Task task1 = new Task(RefreshSprites);
             task1.Start();
-       
-
         }
+
 
         private void GenerateStars()
         {
             //throw new NotImplementedException();
         }
 
-       
-
+      
         //Move Enemies Timer_Tick
         private void RefreshSprites()
         {
@@ -142,7 +136,7 @@ namespace LearningGraphics
                     }
                     catch
                     {
-
+                        //blah some error with thread or something.. who cares, just a game lol.
                     }
                 }
                         
@@ -156,11 +150,13 @@ namespace LearningGraphics
                     button1.Invoke(new Action(() => button1.Enabled = true));
                 }
 
+                //to stop CPU from running throw loop too fast.
                 Task.Delay(70).Wait();
             }
               
 
         }
+
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -188,8 +184,8 @@ namespace LearningGraphics
 
         public void PlayExplosionSound()
         {
+            //tasks off sound as to now slow down gameplay
             Task.Run(() => PlaySound("sounds\\explosion.wav"));
-
         }
 
     
@@ -200,14 +196,15 @@ namespace LearningGraphics
 
         }
 
+
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if(e.KeyCode != Keys.Space)
             {
-                _hero.AllStop();
-            }
-           
+                _hero.AllStop(); //stops ship from continuing to move 
+            }         
         }
+
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -218,14 +215,13 @@ namespace LearningGraphics
             }
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
 
             ResetGame();
             button1.Visible = false;
-            this.Focus();
-            //button1.Enabled = false;
-            
+            this.Focus();           
         }
     }
 }

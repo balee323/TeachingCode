@@ -185,12 +185,13 @@ namespace LearningGraphics
         {
             if (_graphics != null)
             {
-
+                //This has been replaced with full-background refreshes.
                 //_graphics.FillRectangle(Brushes.Black, ShipCoodinates.X-20, ShipCoodinates.Y, ShipCoodinates.Width+50, ShipCoodinates.Height+5);
                 //_graphics.FillRectangle(Brushes.Black, Bullet.X, Bullet.Y, Bullet.Width+2, Bullet.Height+2);
 
                 UpdateShipLocation();
-               // UpdateAmmoLocation();
+                //This now runs on separate task
+                //UpdateAmmoLocation();
 
                 _graphics.DrawImage(ShipSprite, ShipCoodinates);
 
@@ -206,7 +207,6 @@ namespace LearningGraphics
 
         private void UpdateShipLocation()
         {
-
             if (!_isHero)
             {
                 if (ShipCoodinates.Top > _form.Height)
@@ -221,7 +221,6 @@ namespace LearningGraphics
                     _shipCoodinates.Y = xLocation;
                 }
             }
-           
         }
 
 
@@ -235,7 +234,6 @@ namespace LearningGraphics
         {
             while (true)
             {
-
                 if ((Bullet.Top > -30) && _isAmmoInFlight)
                 {
                     var yLocation = Bullet.Y - 30;
@@ -245,9 +243,9 @@ namespace LearningGraphics
                 {
                     _isAmmoInFlight = false;
                 }
+                //to keep cpu from burning through loop too fast (and causing High cpu usage).
                 Task.Delay(10).Wait();
             }
-
         }
 
 
@@ -280,8 +278,6 @@ namespace LearningGraphics
         }
 
 
-
-
         public void MoveLeft()
         {
                 _rightTimer.Enabled = false;
@@ -298,13 +294,9 @@ namespace LearningGraphics
 
         public void AllStop()
         {
-            //Task.Delay(30).Wait();
             _rightTimer.Stop();
             _leftTimer.Stop();
-
         }
-
-
 
     }
 }

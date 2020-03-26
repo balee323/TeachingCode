@@ -37,9 +37,7 @@ namespace LearningGraphics
                 Parallel.ForEach(_enemies, EnemyHit);
                 Parallel.ForEach(_enemies, CollisionWithEnemy);
                 Task.Delay(50).Wait(); //this is so CPU usage doesn't get high
-            }
-            
-         
+            }                    
         }
 
         private void CollisionWithEnemy(SpriteObj enemy)

@@ -234,9 +234,9 @@ namespace LearningGraphics
         {
             while (true)
             {
-                if ((Bullet.Top > -30) && _isAmmoInFlight)
+                if ((Bullet.Top > -20) && _isAmmoInFlight)
                 {
-                    var yLocation = Bullet.Y - 30;
+                    var yLocation = Bullet.Y - 40;
                     _bullet.Y = yLocation;
                 }
                 else
@@ -244,7 +244,7 @@ namespace LearningGraphics
                     _isAmmoInFlight = false;
                 }
                 //to keep cpu from burning through loop too fast (and causing High cpu usage).
-                Task.Delay(10).Wait();
+                Task.Delay(30).Wait();
             }
         }
 

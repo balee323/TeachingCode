@@ -1,0 +1,50 @@
+Assignment:  Create a console application:
+
+Visual studio -> new project
+
+C#
+Windows
+Console
+
+-> .Net Framework (not core)
+
+
+
+Name the solution "homeworks"
+
+and the inital project "HW1"
+
+*The wizard will try to match the solution with the project name, so
+name the solution first.
+
+
+Open the program.cs file.
+
+This file will have the main method, which is the entry point into
+the console application.
+
+
+Code:
+
+Add "hello world" console line.  
+
+Console.WriteLine("Hello World");
+
+be sure to add Console.ReadKey();  at the end
+so the program doesn't just zip throw at 30000000 Miles per hour.
+
+
+
+Once you got that working...  Add some boolean stuff.
+
+Create a boolean variable and name it canContinue.  Set it to false initally.
+
+create an if statement that looks that the value of "canContinue".  
+Run another Console.WriteLine("something..."); inside the if statement 
+
+if(some bool){
+//some code
+}
+
+
+Happy coding.  Feel the itch!

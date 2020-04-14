@@ -1,0 +1,13 @@
+***Homework Assignment 1:
+
+1. Create a console program  (choose .net framework)
+
+2. Create a program that has tells your age in years based on your birthday.
+
+3. Commit and push to GitHub remote repo.
+
+
+
+
+
+

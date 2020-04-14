@@ -43,6 +43,21 @@ namespace DataTypes
 
 
 
+            //compare decimal to double
+
+            decimal decimalNum1 = 605055.4353435554M;
+            decimal decimalNum2 = 75545.4541554564M;
+            var decimalVal = decimalNum1 / decimalNum2;
+            Console.WriteLine($"Decimal result: {decimalVal.ToString("0.##################################################")}");
+
+
+            double doubleNum1 = 605055.4353435554D;
+            double doubleNum2 = 75545.4541554564D;
+            var doubleVal = doubleNum1 / doubleNum2;
+            Console.WriteLine($"double result: {doubleVal.ToString("0.##################################################")}");
+
+
+
 
             string defaultValueString = new string(string.Empty);
             var str1 = new string(string.Empty);

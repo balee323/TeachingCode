@@ -17,6 +17,8 @@ namespace Specific_day
             Console.WriteLine("D-Day (Overlord operation): " +
                               overlordDday.ToLongDateString() + ".");
 
+            Console.WriteLine("age in years " +
+                           (overlordDday.Year - DateTime.Now.Year) + ".");
             // Waiting for Enter
             Console.ReadLine();
         }

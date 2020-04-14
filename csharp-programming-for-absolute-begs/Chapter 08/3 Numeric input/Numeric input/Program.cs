@@ -23,7 +23,7 @@ namespace Numeric_input
 
             //3 ways to convert the string to Integer...
             //1
-            enteredNumber = Convert.ToInt32(input);  
+           // enteredNumber = Convert.ToInt32(input);  
             //2
             //enteredNumber = int.Parse(input); //blow up if wrong value... string.
             //3

@@ -1,0 +1,13 @@
+Program to best transporation based on:
+
+budget
+cost
+distance
+
+return the best mode of transporation.
+
+Functions
+Objects
+DateTime object  (let's just use integer for this for now).
+IF statements
+Loops

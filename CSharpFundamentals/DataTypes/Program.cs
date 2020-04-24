@@ -48,13 +48,13 @@ namespace DataTypes
             decimal decimalNum1 = 605055.4353435554M;
             decimal decimalNum2 = 75545.4541554564M;
             var decimalVal = decimalNum1 / decimalNum2;
-            Console.WriteLine($"Decimal result: {decimalVal.ToString("0.##################################################")}");
+           // Console.WriteLine($"Decimal result: {decimalVal.ToString("0.##################################################")}");
 
 
             double doubleNum1 = 605055.4353435554D;
             double doubleNum2 = 75545.4541554564D;
             var doubleVal = doubleNum1 / doubleNum2;
-            Console.WriteLine($"double result: {doubleVal.ToString("0.##################################################")}");
+           // Console.WriteLine($"double result: {doubleVal.ToString("0.##################################################")}");
 
 
 
@@ -80,17 +80,17 @@ namespace DataTypes
             //WriteLineWithColor("1: " + boolVal1.ToString(), ConsoleColor.Red); //false (default)
 
 
-           // bool boolVal2 = true;
-           // WriteLineWithColor("2: " + boolVal2.ToString(), ConsoleColor.Green);  //true
+            // bool boolVal2 = true;
+            // WriteLineWithColor("2: " + boolVal2.ToString(), ConsoleColor.Green);  //true
 
             //var boolVal3 = boolVal2;
-           // WriteLineWithColor("3: " + boolVal3.ToString(), ConsoleColor.Green);  //true
+            // WriteLineWithColor("3: " + boolVal3.ToString(), ConsoleColor.Green);  //true
 
-          //  var boolVal4 = 1 == 1;  //true or false
-           // WriteLineWithColor("4: " + boolVal4.ToString(), ConsoleColor.Green);  //true
+            //  var boolVal4 = 1 == 1;  //true or false
+            // WriteLineWithColor("4: " + boolVal4.ToString(), ConsoleColor.Green);  //true
 
-           // var boolVal5 = 1 == 5;
-           // WriteLineWithColor("5: " + boolVal5.ToString(), ConsoleColor.Red);  //?
+            // var boolVal5 = 1 == 5;
+            // WriteLineWithColor("5: " + boolVal5.ToString(), ConsoleColor.Red);  //?
 
             //var boolVal6 = 8 != 9;
             //WriteLineWithColor("6: " + boolVal6.ToString(), ConsoleColor.Green); //?
@@ -101,30 +101,28 @@ namespace DataTypes
             //var boolVal8 = (8 < 9) && (7 > 6);
             //WriteLineWithColor("8: " + boolVal8.ToString(), ConsoleColor.Green);  //true
 
-           // var boolVal9 = (8 < 9) && (6 > 7);
-           // WriteLineWithColor("9: " + boolVal9.ToString(), ConsoleColor.Red);  //?
+            // var boolVal9 = (8 < 9) && (6 > 7);
+            // WriteLineWithColor("9: " + boolVal9.ToString(), ConsoleColor.Red);  //?
 
             //var boolVal10 = (8 < 9) || (7 > 6);
-           // WriteLineWithColor("10: " + boolVal10.ToString(), ConsoleColor.Green);  //true
+            // WriteLineWithColor("10: " + boolVal10.ToString(), ConsoleColor.Green);  //true
 
-           // var boolVal11 = (8 < 9) || (6 > 7);
-          //  WriteLineWithColor("11: " + boolVal11.ToString(), ConsoleColor.Green);  //?
+            // var boolVal11 = (8 < 9) || (6 > 7);
+            //  WriteLineWithColor("11: " + boolVal11.ToString(), ConsoleColor.Green);  //?
 
 
 
             // //seeing if object is null (not instantiated, didn't use new keyword to create an object)
-            // bool boolVal12 = new bool();
+            bool boolVal12 = false;  //initalized at false
 
-            // Object obj1;
-            // obj1 = GetNullObject();
-
-            // boolVal12 = (obj1 == null);
+             Object obj1;  //pointer or reference type...  referring to an object...
+             obj1 = null;
+             
+             boolVal12 = (obj1 == null); //null equals null  (which is true)
 
             // ////another way
             //// boolVal12 = obj1.Equals(null);
-            // WriteLineWithColor("12: " + boolVal12.ToString(), ConsoleColor.Green);  //true
-
-
+             WriteLineWithColor("12: " + boolVal12.ToString(), ConsoleColor.Green);  //true
 
 
 

@@ -1,0 +1,21 @@
+***Homework Lists Part 1:
+
+1. Create a console program  (choose .net framework)
+
+2. The program will print a list of 10 numbers or strings to the console.
+
+	Add any ten items to a list (either all string or all int, can't mix):
+
+
+3. The Program will show the count of all items in the list (use the .Count() method).
+
+4. Then switch places with 3 items.  You change their indexes.  And print all items to the console.
+
+5. 
+
+	
+5. All code must be put into a function(s) and iterate the array using For loop, while loop, or For each loop.
+
+
+
+5. Commit and push to GitHub remote repo.

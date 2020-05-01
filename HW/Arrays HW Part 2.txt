@@ -1,0 +1,17 @@
+***Homework Arrays part 2:
+
+1. Create a console program  (choose .net framework)
+
+
+2.  Add these numbers to int array
+	2, 7, 0, -2, 15, 2, 8, -2
+
+3.  Loop through the array and sum up the numbers.
+	-you would use an int variable that is declared OUTSIDE the loop.
+
+	
+4. All code must be put into a function(s) and iterate the array using For loop, while loop, or For each loop.
+
+
+
+5. Commit and push to GitHub remote repo.

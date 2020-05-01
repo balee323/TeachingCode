@@ -1,0 +1,20 @@
+***Homework Arrays part 1:
+
+1. Create a console program  (choose .net framework)
+
+2. The program will print a list of numbers to the console and show which element position has the number 36.
+
+	Add these numbers to the array:
+	1, 3, 47, 22, 9, 36, 8, -5
+
+
+3. The Program will show the count of all elements in the array to the console by using a loop (don't use Length property).
+
+4. Now that you know the length of the array, print the elements to the console in reverse order
+-Use the length of the array -1, as the first item and iterate backwards.
+	
+5. All code must be put into a function(s) and iterate the array using For loop, while loop, or For each loop.
+
+
+
+6. Commit and push to GitHub remote repo.

@@ -1,0 +1,20 @@
+***Homework Arrays part 3 -- getting serious now!:
+
+1. Create a console program  (choose .net framework)
+
+
+2.  Add these numbers to int array
+	2, 4, 5, 30, 15, 2, 6, 33, 89, 4, 6
+
+
+3. Use a nested for loop to find the duplicate numbers and write the duplicates that are found to the console.
+
+
+4. Create a new Array of type Int and copy any number of that isn't a duplicate 
+	-This seems tricky at first, but think about how the nested loop works
+	The number 2 isn't a duplicate until the duplicate(s) are found.  So you add it to the list.
+	I will be doing a smiliar example in class. 
+
+5. Write out this new, duplicates removed, List to the console.
+
+6. Save, Commit & push code to GitHub repo.

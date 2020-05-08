@@ -15,7 +15,7 @@ So have a list of choices in the Console.WriteLine().  Functions 1-3.
 	static void Main(string[] args)
         {	
 		Console.WriteLine("This program runs 3 different funtions.  Please pick from the following:");
-		Console.WriteLine("1: n-times loop, 2: random loop, 3: user-option loop");
+		Console.WriteLine("1: n-times loop, 2: random loop, 3: user-option loop.");
 		Console.WriteLine("please type 1, 2, or 3 and press enter.");
 		
 		int choice = 0;
@@ -39,7 +39,9 @@ So have a list of choices in the Console.WriteLine().  Functions 1-3.
 
 	}
 
-	
+	//function1
+
+	///function2...
 
 
 
@@ -52,8 +54,8 @@ Function2()
 This function will run a loop a random number of times.
 *Use Random object.   
  
-EX.  Random rand = new Random(seed value or leave empty)
-int randomNumber = rand.Next(minNumber, MaxNumber);
+Random rand = new Random();
+int randomNumber = rand.Next(1, 10);
 
 then use the randomNumber for the loop condition.
 
@@ -61,6 +63,13 @@ then use the randomNumber for the loop condition.
 Function3()
 GetUserDecisionForLoopingHello()
 This funtion will ask the user to enter a number between 1 and 3.
+
+
+int choice = 0;
+choice = int.Parse(Console.ReadLine());  //if anything else than an integer is entered an exception will occur.
+
+
+now loop based on choice integer.
 
 if 1 is selected, then show a loop that says "Hello" 1 time.
 If 2 is selected, then show a loop that says "hello" 2 times.

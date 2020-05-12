@@ -3,7 +3,7 @@
 1. Create a console program  (choose .net framework)
 
 
-2.  Add these numbers to int array
+2.  put these numbers into an int array
 	2, 7, 0, -2, 15, 2, 8, -2
 
 3.  Loop through the array and sum up the numbers.

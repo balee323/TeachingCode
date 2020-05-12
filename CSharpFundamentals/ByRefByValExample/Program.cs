@@ -23,16 +23,19 @@ namespace ByRefByValExample
             //C# likes to do things implicitly for you.  Which is nice, but makes us lazy and dummer sometimes :)  :(
             int number = 1;
             PassIntByValFunction(number);  //just remember that integer is not a reference type... so special magic here...
-            Console.WriteLine(number);
+            //Console.WriteLine(number);  //will this show 1 or 6?
+
 
             string str = "Brian";  //object... which uses a reference type to point to the actual object
             PassStringByRefFuncion(str);  //C# handles strings live Value types (even though they actually are reference types).
-            Console.WriteLine(str); //"Brian"
+            Console.WriteLine(str); //
+
 
             MyTestObj testObj = new MyTestObj();   //pure object
             testObj.MyString = "brian";
+            Console.WriteLine(testObj.MyString);
             PassMyTestObjFuncion(testObj);  //there's no return from this function.  It is void!
-            Console.WriteLine(testObj.MyString);  //"Stephanie"
+            Console.WriteLine(testObj.MyString);  //
 
             Console.ReadKey();
         }
@@ -41,7 +44,7 @@ namespace ByRefByValExample
         public static void PassIntByValFunction(int num)   //pass by reference and pass by value
         {
             num = num + 5;  //6
-            //Console.WriteLine(num);
+            Console.WriteLine(num);
         }
 
 
@@ -53,7 +56,8 @@ namespace ByRefByValExample
 
         public static void PassMyTestObjFuncion(MyTestObj testObj)  //by default, functions use pass by value (which makes a copy..)
         {
-            testObj.MyString = "Stephanie";  //changing what the pointer is pointing to.
+            testObj = null;
+            //testObj.MyString = null; //changing what the pointer is pointing to.
         }
 
     }

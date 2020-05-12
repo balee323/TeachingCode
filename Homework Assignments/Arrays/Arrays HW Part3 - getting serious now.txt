@@ -3,7 +3,7 @@
 1. Create a console program  (choose .net framework)
 
 
-2.  Add these numbers to int array
+2.  put these numbers into an int array:
 	2, 4, 5, 30, 15, 2, 6, 33, 89, 4, 6
 
 

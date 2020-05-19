@@ -18,10 +18,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{82FBBF2B-3A3D-4BB9-B52B-D2B2147DBDA0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamentals", "{0BBDFD85-BBF0-496B-A6B9-62E9AF5E9532}"
+	ProjectSection(SolutionItems) = preProject
+		..\Lecture Materials\CSharpAccessModifier.PNG = ..\Lecture Materials\CSharpAccessModifier.PNG
+		..\Lecture Materials\datatypes.png = ..\Lecture Materials\datatypes.png
+		..\Lecture Materials\List vs array.png = ..\Lecture Materials\List vs array.png
+		..\Lecture Materials\NetFrameworks.png = ..\Lecture Materials\NetFrameworks.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanCode", "CleanCode", "{C2D90613-06A0-40CF-B221-6E377A627233}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExampleProjects", "ExampleProjects", "{36140C0F-FEB8-4D0C-B008-5522F83AD77D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IO", "IO", "{29366091-DC2E-48EE-8343-8A4CA8F3BFDC}"
 EndProject

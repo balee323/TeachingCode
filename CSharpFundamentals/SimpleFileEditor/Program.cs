@@ -21,9 +21,10 @@ namespace SimpleFileEditor
             //for breakpoint
             ;
 
+
             //write a file
-            //string testData = "HELLO";
-            //fileManager.SaveFile(testData);
+           // string testData = "HELLO";
+           // fileManager.SaveFile(testData);
 
 
             //open a file as single string

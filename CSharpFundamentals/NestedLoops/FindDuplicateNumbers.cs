@@ -8,7 +8,7 @@ namespace NestedLoops
 {
     class FindDuplicateNumbers
     {
-        private int[] _numArray;
+        private List<int> _numArray;
 
         //constructor
         public FindDuplicateNumbers()
@@ -19,7 +19,7 @@ namespace NestedLoops
         //constructor
         public FindDuplicateNumbers(int[] numberArray)
         {
-            _numArray = numberArray;
+            _numArray = numberArray.ToList<int>();
         }
 
 
@@ -29,10 +29,10 @@ namespace NestedLoops
 
             int duplicateElement = 0;
 
-            for(int i = 0; i < _numArray.Length; i++)
+            for(int i = 0; i < _numArray.Count; i++)
             {
                 ; //for breakpoint
-                for(int j = i + 1; j < _numArray.Length; j++)
+                for(int j = i + 1; j < _numArray.Count; j++)
                 {
                     ; //for breakpoint
                     if(_numArray[i] == _numArray[j])

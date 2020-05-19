@@ -1,0 +1,19 @@
+***Homework Load file and print duplicate names:
+
+
+1. Create a console program  (choose .net framework)
+
+
+2. Load file (duplicateNames.txt)  (read into List or array)
+	
+
+
+3. Use a nested for loop to find the duplicate Names and write the duplicates that are found to the console.
+	if(names[i] == names[j]){
+		Console.WriteLine("Duplicate name found: " + names[j]);
+	}
+
+
+
+
+4. Save, Commit & push code to GitHub repo.

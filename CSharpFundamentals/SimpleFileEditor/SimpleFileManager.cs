@@ -20,12 +20,13 @@ namespace SimpleFileEditor
 
         public List<string> LoadTextFileAsLines()
         {
-            List<string> fileLines = new List<string>();
+            // List<string> fileLines = new List<string>();
+            string[] fileLines = new string[11];
 
             try
             {
                 CheckifFileExists();
-                fileLines = File.ReadAllLines(_filePath).ToList<string>();
+                fileLines = File.ReadAllLines(_filePath);  // .ToList<string>();
             }
             catch (Exception e)
             {

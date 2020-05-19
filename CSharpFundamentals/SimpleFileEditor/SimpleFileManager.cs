@@ -20,14 +20,18 @@ namespace SimpleFileEditor
 
         public List<string> LoadTextFileAsLines()
         {
-            List<string> fileLines = new List<string>();
-            //string[] fileLine = new string[11];
+            //you can create a list from an array and vice-versa
+            //list.ToArray()
+            //array.ToList()
+
+            List<string> fileLines = new List<string>(); //for reading in as a list
+            //string[] fileLine = new string[11];  //for reading in as array
 
             try
             {
                 CheckifFileExists();
-                //fileLines = File.ReadAllLines(_filePath);
-                fileLines = File.ReadAllLines(_filePath).ToList<string>();
+                //fileLines = File.ReadAllLines(_filePath); //array
+                fileLines = File.ReadAllLines(_filePath).ToList<string>();  //list
             }
             catch (Exception e)
             {

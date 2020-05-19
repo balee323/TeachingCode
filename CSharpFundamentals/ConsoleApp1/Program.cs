@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace Functions
 {
     class Program
     {
@@ -20,11 +20,12 @@ namespace ConsoleApp1
 			}
 			else if (choice == 2)
 			{
-				function2();
+				function2("Hello from Function 2");
 			}
 			else if (choice == 3)
 			{
-				function3();
+				string message = function3();
+				Console.WriteLine(message);
 			}
 			else
 			{
@@ -36,21 +37,25 @@ namespace ConsoleApp1
 		}
 
 
-		private static void function3()
-		{
-			Console.WriteLine("Hi from function 3");
-		}
-
-
-		private static void function2()
-		{
-			Console.WriteLine("Hi from function 2");
-		}
-
-
+		//void function example
 		private static void function1()
 		{
 			Console.WriteLine("Hi from function 1");
+		}
+
+
+		//parameter example
+		private static void function2(string message)
+		{
+			Console.WriteLine(message);
+		}
+
+
+		//return function example
+		private static string function3()
+		{
+			string message = "Hi from function 3";
+			return message;
 		}
 	}
 }

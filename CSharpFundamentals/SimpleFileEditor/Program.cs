@@ -13,17 +13,30 @@ namespace SimpleFileEditor
 
             Console.WriteLine("Simple File IO progam....");
 
-            var fileManager = new FileManager("TestFile", "C:/testing/test/");
+
+            SimpleFileManager fileManager = new SimpleFileManager("C:/testing/testfile.txt");//file path
+
+            //var fileManager = new FileStreamManager("TestFile", "C:/testing/test/");
+
+            //for breakpoint
+            ;
 
             //write a file
-            string testData = "HELLO";
-            fileManager.WriteFile(testData);
+            //string testData = "HELLO";
+            //fileManager.SaveFile(testData);
 
 
-            //open a file
-            //var fileContents = fileManager.ViewFile();
+            //open a file as single string
+            string fileContents = fileManager.LoadTextFileAsSingleString();
 
+            //for breakpoint
+            ;
 
+            //open file as a List of lines
+            List<string> fileLines = fileManager.LoadTextFileAsLines();
+
+            //for breakpoint
+            ;
 
             Console.WriteLine("Press any key to quit.");
             Console.ReadKey();

@@ -8,10 +8,10 @@ using System.Collections;
 
 namespace SimpleFileEditor
 {
-    class FileManager
+    class FileStreamManager
     {
 
-        public FileManager(string fileName, string directory)
+        public FileStreamManager(string fileName, string directory)
         {
             FileName = fileName;
             Directory = directory;

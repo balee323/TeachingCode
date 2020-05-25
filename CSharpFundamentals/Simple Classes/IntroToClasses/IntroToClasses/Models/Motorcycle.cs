@@ -20,6 +20,7 @@ namespace IntroToClasses.Models
 
         public int GetSpeed()
         {
+            //check how many turns the wheel is doing...
             return base.Speed;
         }
 

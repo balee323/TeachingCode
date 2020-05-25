@@ -18,20 +18,40 @@ namespace SimpleFileEditor
         }
 
 
-        public List<string> LoadTextFileAsLines()
-        {
-            //you can create a list from an array and vice-versa
-            //list.ToArray()
-            //array.ToList()
+        //public List<string> LoadTextFileAsLines()
+        //{
+        //    //you can create a list from an array and vice-versa
+        //    //list.ToArray()
+        //    //array.ToList()
 
-            List<string> fileLines = new List<string>(); //for reading in as a list
-            //string[] fileLine = new string[11];  //for reading in as array
+        //    List<string> fileLines = new List<string>(); //for reading in as a list
+        //    //string[] fileLine = new string[11];  //for reading in as array
+
+        //    try
+        //    {
+        //        CheckifFileExists();
+        //        //fileLines = File.ReadAllLines(_filePath); //array
+        //        fileLines = File.ReadAllLines(_filePath).ToList<string>();  //list
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine("An error has occured: " + e);
+        //    }
+
+
+        //    return fileLines;
+        //}
+
+
+        public string[] LoadTextFileAsLines()
+        {
+
+            string[] fileLines = new string[11];  //for reading in as array
 
             try
             {
                 CheckifFileExists();
-                //fileLines = File.ReadAllLines(_filePath); //array
-                fileLines = File.ReadAllLines(_filePath).ToList<string>();  //list
+                fileLines = File.ReadAllLines(_filePath); //array
             }
             catch (Exception e)
             {
@@ -41,6 +61,7 @@ namespace SimpleFileEditor
 
             return fileLines;
         }
+
 
 
         public string LoadTextFileAsSingleString()

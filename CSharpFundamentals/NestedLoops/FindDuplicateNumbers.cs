@@ -51,7 +51,7 @@ namespace NestedLoops
         //use built-in int array if one isn't passed in.
         private void CreateIntegerArray()
         {
-            _numArray = new int[10];
+            _numArray = new List<int>();
             _numArray[0] = 12;
             _numArray[1] = 22;
             _numArray[2] = 9;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleFileEditor.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,13 +29,18 @@ namespace SimpleFileEditor
 
 
             //open a file as single string
-            string fileContents = fileManager.LoadTextFileAsSingleString();
+            //string fileContents = fileManager.LoadTextFileAsSingleString();
 
             //for breakpoint
             ;
 
             //open file as a List of lines
-            List<string> fileLines = fileManager.LoadTextFileAsLines();
+            string[] fileLines = fileManager.LoadTextFileAsLines();
+
+            List<Employee> emps;
+
+            DataMapper mapper = new DataMapper();
+            emps = mapper.Extract(fileLines);
 
             //for breakpoint
             ;
